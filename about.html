@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css"/>
+    <title>Document</title>
+    </head>
+<div id="main">
+<body>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <header>
+      <h1>About</h1>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="first layout.html">About</a>
+        <a href="stockcontri.html">Stock Contribution</a>
+        <a href="stockavg1.html">Stock Average(basic)</a>
+        <a href="stockavg2.html">Stock Average(Advance)</a>
+        <a href="percentchng.html">Percent Change</a>
+     </div>
+    <section>
+        <div class="wraper">
+     <h1>About Webapp</h1>
+    <h2>Hello and welcome, Actully the story of this website begans couple of years ago, when i started my investing joureny.
+    I know know you must be thinking "couple of years ago, which means in 2022, so you missed the after covid bull run of 2021?" yes thats true.
+    so when i started investing it was the end of the bull run and market was going into the bear fase and i was buying on the dips.
+and making continious losses. At that time to measure some parameters regarding my portfolio, i started making some simple calculators.
+excel was and is not my favourite thing. so instead of that i wrote these formulas in c and c++ and made some basic console app for my own use.
+But when i began to learn web development, its abviousli first thing come to my mind that to make these calculators available for everybody.
+Thats when working on this web app began.<br> </h2>
+<h2>Here i have integrated several calculaters which you can use to measure some basic things such as average value of share, contribution of stock in your portfolio etc;<br>
+<ol>
+    <li>Stock Contribution Calculator: This calculator will help you to find percent contribution of any stock in your portfolio.</li><br>
+    <li>Stock Average Calculator (basic): In this calculator you can find what is the average stock price you are going to get after reinvestment.</li><br>
+    <li>Stock Average Calculator (advance): In this calculator, with average stock price you can get percent net change as well</li><br>
+    <li>Percent Change Calculator: In this calculator you can find percent change between two points.</li><br>
+</ol></h2>
+</div>
+</section>
+    <section>
+        <div class="wraper">
+     <h1>About Me<br></h1>
+    <h2>Saurabh Naniwadekar - programmer, Web Developer, Freelancer.<br>
+        <br>Hello, I am saurabh, Solo Developer of this web application. Basically I am a mechanical engineer by degree. This programming bug bite me in mandatory covid lockdowns, initially I started doing programming for fun, I ventured in c language in my collage days so I initially started making console applications in c, later I learn some C++ as well. When i started to learn web development, I decided to make web app off of my calculators. And that's how this website born.</h2>
+        <h2>Apart from this, six days a week I work with my father in our family business which is a small machine shop located at Kolhapur.<br></h2><h2> Reading, writing, trekking, fishkeeping, photography are some of my hobbies. And I am passionate about stock markets and programming.
+        </h2>
+        </div>
+    </section>
+    <footer>&copy; zakas.xyz 2024-2034<br>
+    Feedback @saurabhawani@gmail.com</footer>
+</div>
+<script>/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("main").style.marginLeft = "250px";
+    }
+    
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("main").style.marginLeft = "0";
+    }</script>
+</body>
+
+</html>

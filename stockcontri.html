@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<div id="main">
+<body>
+    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+    <header>
+        <h1>Stock Contribution Calculator</h1>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="location.html">Stock Contribution</a>
+        <a href="stockavg1.html">Stock Average(basic)</a>
+        <a href="stockavg2.html">Stock Average(Advance)</a>
+        <a href="percentchng.html">Percent Change</a>
+     </div>
+    <section>
+        <div class="container">
+            <div class="box1">
+                <div id="head1"><h3>Total Investment:</h3></div>
+                <p><input id="first"/></p>
+                <div id="head2"><h3>Total Value of The Stock:</h3></div>
+                <p><input id="second"/></p>
+                <button onclick="contribution()">Calculate</button>
+        </div>
+        <div class="box2">
+            <div id="head3"><h3>Total percentage of stock in portfolio:</h3></div>
+            <p><input id="answer"/></p>
+        </div>
+        </div>
+        <script src="stockcontri.js"></script>
+        </section>
+    <section>
+        <h2>Description</h2>
+        <div class="wraper">
+         <h2>Use case<br></h2>
+         <h3>Most of the portfolios consists of more than 2 stocks. And each stock have different amount of total investment. In that case when we want to check total contribution of each stock in our portfolio then at that time we can use this calculator to check how much percentage each stock occupied in our portfolio. When we want to allocate percent money sector wise, at that time we can use this calculator.
+        </h3>
+        </div>
+        <div class="wraper">
+            <h2>How to use:<br></h2>
+            <ul>
+                <li>Calculator asks you two values.</li>
+                <li>First you type amount of your total investment.</li>
+                <li>Secondly type amount of that stock of which you want to know its percentage.</li>
+                <li>After clicking on calculate you will get total percentage of that particular stock in your portfolio. </li>
+            </ul>
+        </div>
+    </section>
+    <footer>&copy; zakas.xyz 2024-2034<br>
+        Feedback @saurabhawani@gmail.com</footer>
+    </div>
+    <script>/* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+        }</script>
+</body>
+</html>
